@@ -57,7 +57,7 @@ Now you can run predictions by providing the sample id:
 ```
 python predict.py tr03-0078
 ```
-It will generate a file called "tr03-0078", each line corresponds to the prediction for each time point in the original polysomnogram.
+It will generate a file called "tr03-0078.vec", each line corresponds to the prediction for each time point in the original polysomnogram.
 
 If you want to run multiple predictions, you can try:
 
