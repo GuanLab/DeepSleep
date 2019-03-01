@@ -74,7 +74,7 @@ python score2018.py *vec -r ./data/training/
 ```
 It will print out the results like this:
 ```
-ecord          AUROC     AUPRC
+record          AUROC     AUPRC
 _______________________________
 tr03-0078    0.932568  0.554207
 tr03-0079    0.975179  0.314851
