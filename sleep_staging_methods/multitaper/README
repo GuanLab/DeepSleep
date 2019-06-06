@@ -1,0 +1,18 @@
+
+100 epoch
+lr=1e-4; delay=1e-5
+
+125 epoch
+lr=1e-4; delay=1e-5
+
+150 epoch
+lr=1e-4; delay=1e-5
+
+175 epoch
+
+200 epoch
+
+
+
+
+

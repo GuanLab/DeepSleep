@@ -1,0 +1,46 @@
+#PBS -N multitaper
+#PBS -l nodes=1:ppn=1:gpus=1,mem=20gb
+#PBS -l walltime=72:00:00
+#PBS -j oe
+#PBS -S /bin/bash
+#PBS -e err.$PBS_JOBNAME.log
+#PBS -o out.$PBS_JOBNAME.log
+ 
+cd $PBS_O_WORKDIR
+echo Time is `date`
+echo Directory is `pwd`
+
+#module load python/3.6 cuda/8.0.44
+module load cuda/9.0.176
+CUDA_VISIBLE_DEVICES=0
+
+set -e
+
+i=1
+
+dir=epoch5
+mkdir -p $dir
+python train_8m.py ${i} | tee -a log_${i}.txt
+python single_predict_8m.py ${i}
+mv auc_auprc_${i}.txt $dir
+mv eva_global_${i}.txt $dir
+cp weights_${i}.h5 $dir
+
+#dir=epoch50
+#mkdir -p $dir
+#python continue_train_8m.py ${i} | tee -a log_${i}.txt
+#python single_predict_8m.py ${i}
+#mv auc_auprc_${i}.txt $dir
+#mv eva_global_${i}.txt $dir
+#cp weights_${i}.h5 $dir
+
+#dir=epoch75
+#mkdir -p $dir
+#python continue_train1.py ${i} | tee -a log_${i}.txt
+#python single_predict_8m.py ${i}
+#mv auc_auprc_${i}.txt $dir
+#mv eva_global_${i}.txt $dir
+#cp weights_${i}.h5 $dir
+
+
+
