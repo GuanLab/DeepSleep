@@ -1,6 +1,6 @@
-## DeepSleep: Near-perfect Detection of Sleep Arousals at Millisecond Resolution by Deep Learning
+## DeepSleep: Fast and Accurate Prediction of Sleep Arousals at Millisecond Resolution by Deep Learning
 
-This is the package of our winning algorithm in the 2018 "You Snooze, You Win" PhysioNet Challenge. 
+This is the package of our winning algorithm in the 2018 "You Snooze, You Win" PhysioNet Challenge. Details can be found from [Hongyang Li, Yuanfang Guan - bioRxiv, 2019, doi: doi: https://doi.org/10.1101/859256](https://www.biorxiv.org/content/10.1101/859256v1). Please contact (hyangl@umich.edu or gyuanfan@umich.edu) if you have any questions or suggestions.
 
 background: [2018 PhysioNet Challenge](https://physionet.org/challenge/2018/)
 
