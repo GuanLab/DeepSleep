@@ -51,7 +51,7 @@ def dice_coef_loss(y_true, y_pred):
 
 
 def get_unet():
-    inputs = Input((size, channel)) #4096*2048
+    inputs = Input((size, channel)) #length*channel
     print(inputs.shape)
 
     conv01 = BatchNormalization()(Conv1D(15, 7, activation='relu', padding='same')(inputs))
