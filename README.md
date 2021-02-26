@@ -90,7 +90,13 @@ A 50-second example with 13 physiological signals and the corresponding binary l
 
 
 ### 6. model training
-Here the two example records were used to train the model. In practice, please download the PhysioNet Challenge dataset or your own dataset to train the model.
+Here the two example records were used to train the model. In practice, please download the PhysioNet Challenge dataset or your own dataset to train the model. In the example "train.py" and "predict.py", we used five input channels:
+* 1. randomly selected one EEG/EOG channel
+* 2. randomly selected one EMG channel from Chest or ABD
+* 3. EMG - Chin
+* 4. Airflow
+* 5. ECG
+You can change the input channels to train models based on your need.
 
 ```
 python train.py
