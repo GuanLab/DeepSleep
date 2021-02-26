@@ -89,3 +89,10 @@ A 50-second example with 13 physiological signals and the corresponding binary l
 ![Figure2](figure/example.gif?raw=true "Title")
 
 
+### 6. model training
+Here the two example records were used to train the model. In practice, please download the PhysioNet Challenge dataset or your own dataset to train the model.
+
+```
+python train.py
+```
+
