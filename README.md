@@ -1,6 +1,6 @@
-## DeepSleep: Fast and Accurate Prediction of Sleep Arousals at Millisecond Resolution by Deep Learning
+## DeepSleep convolutional neural network allows accurate and fast detection of sleep arousal
 
-This is the package of our winning algorithm in the 2018 "You Snooze, You Win" PhysioNet Challenge. Details can be found from [Hongyang Li, Yuanfang Guan - bioRxiv, 2019, doi: doi: https://doi.org/10.1101/859256](https://www.biorxiv.org/content/10.1101/859256v1). Please contact (hyangl@umich.edu or gyuanfan@umich.edu) if you have any questions or suggestions.
+This is the package of our winning algorithm in the 2018 "You Snooze, You Win" PhysioNet Challenge. Details can be found from [Hongyang Li, Yuanfang Guan. DeepSleep convolutional neural network allows accurate and fast detection of sleep arousal. *Communications Biology* 2021.](https://www.nature.com/articles/s42003-020-01542-8). Please contact (hyangl@umich.edu or gyuanfan@umich.edu) if you have any questions or suggestions.
 
 background: [2018 PhysioNet Challenge](https://physionet.org/challenge/2018/)
 
@@ -101,4 +101,4 @@ You can change the input channels to train models based on your need.
 ```
 python train.py
 ```
-
+We designed three neural networks accept different lengths of input at full, 1/2 and 1/8 resolutions, corresponding to "unet0.py", "unet1.py", and "unet2.py". To run the two lower 1/2 and 1/8 resolution models, the train and predict codes need to be modified.
