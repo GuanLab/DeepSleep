@@ -26,8 +26,8 @@ path1='./data/training/'
 path2='./data/feature_8m/'
 path3='./data/label_8m/'
 
-os.system('mkdir -p ' + path2)
-os.system('mkdir -p ' + path3)
+os.mkdir(path2)
+os.mkdir(path3)
 
 size= 2**23
 num_pool=0
