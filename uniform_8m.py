@@ -26,8 +26,8 @@ path1='./data/training/'
 path2='./data/feature_8m/'
 path3='./data/label_8m/'
 
-os.mkdir(path2)
-os.mkdir(path3)
+os.makedirs(path2, exist_ok=True)
+os.makedirs(path3, exist_ok=True)
 
 size= 2**23
 num_pool=0
