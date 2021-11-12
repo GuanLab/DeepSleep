@@ -8,6 +8,6 @@ authors:
     given-names: Yuanfang
     orcid: https://orcid.org/0000-0001-8275-2852
 title: "DeepSleep convolutional neural network allows accurate and fast detection of sleep arousal."
-version: 2.0.4
+version: 1.0.0
 doi: 10.1038/s42003-020-01542-8
 date-released: 2021-11-11
