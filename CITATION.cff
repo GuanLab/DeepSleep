@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: Li
+    given-names: Hongyang
+    orcid: https://orcid.org/0000-0002-7902-4157
+  - family-names: Guan
+    given-names: Yuanfang
+    orcid: https://orcid.org/0000-0001-8275-2852
+title: "DeepSleep convolutional neural network allows accurate and fast detection of sleep arousal."
+version: 2.0.4
+doi: 10.1038/s42003-020-01542-8
+date-released: 2021-11-11

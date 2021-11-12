@@ -4,8 +4,6 @@ This is the package of our winning algorithm in the 2018 "You Snooze, You Win" P
 
 background: [2018 PhysioNet Challenge](https://physionet.org/challenge/2018/)
 
-Please contact (hyangl@umich.edu or gyuanfan@umich.edu) if you have any questions or suggestions.
-
 ![Figure1](figure/Fig_1.png?raw=true "Title")
 
 ---
